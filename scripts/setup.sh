@@ -33,7 +33,7 @@ sudo apt-get install -yy libwebkit2gtk-4.0-dev # Surf dependencies
 # git clone https://github.com/HerrFreude/HerrFreude
 
 # Put configs where they belong
-cd HerrFreude/dotfiles 
+cd ~/HerrFreude/dotfiles 
 mv -f .xinitrc ~
 mv -f .bashrc ~
 mv -f .Xresources ~
