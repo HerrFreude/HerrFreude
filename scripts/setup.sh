@@ -30,7 +30,7 @@ sudo apt-get install -yy libx11-dev libxinerama-dev libxft-dev # dwm dependencie
 sudo apt-get install -yy libwebkit2gtk-4.0-dev # Surf dependencies
 
 # Get dotfiles/configs and scripts
-git clone https://github.com/HerrFreude/HerrFreude
+# git clone https://github.com/HerrFreude/HerrFreude
 
 # Put configs where they belong
 cd HerrFreude/dotfiles 
