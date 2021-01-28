@@ -20,6 +20,9 @@ sudo apt-get install -yy feh
 sudo apt-get install -yy mpv
 sudo apt-get install -yy cmus
 
+# Add anti eye-cancer mode
+sudo apt-get install -yy redshift
+
 # Installing LaTeX utils (for pdf document just "pdflatex" the filename)
 sudo apt-get install -yy texlive-full
 
