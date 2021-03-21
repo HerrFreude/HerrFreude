@@ -1,0 +1,81 @@
+# ~/.cwmrc
+
+# default font
+fontname "DejaVuSansMono-Bold:size=12"
+# border width
+borderwidth 4
+# automatically add new windows to the current group
+sticky yes
+# snap windows to edges at 4 pixels distance
+snapdist 4
+# leave a gap
+gap 10 10 10 10
+
+# colors
+color activeborder   '#82a36e'
+color inactiveborder '#595959'
+color font           '#c0c5ce'
+color menubg         '#25301d'
+color menufg         '#c5cec0'
+color groupborder    '#a66363'
+color ungroupborder  '#a6a663'
+color urgencyborder  '#ef8888'
+
+# KEYBINDINGS
+# 4 = mod (windows key)
+# S = shift
+# C = control
+# M = meta (alt)
+# remove all default bindings
+unbind-key all
+
+# mod + shift + enter = new xterm
+bind-key 4S-Return xterm #terminal
+
+# mod + L = lock screen (slock)
+bind-key 4-l slock
+
+# mod + backspace = hide window
+bind-key 4-BackSpace window-hide
+
+# mod/alt + tab = cycle through current windows
+bind-key 4-j window-cycle
+# mod + k = same thing in reverse
+bind-key 4-k window-cycle
+
+# mod + q = quit window
+bind-key 4-q window-close
+bind-key 4S-c window-close
+
+# mod + F = make current window fullscreen
+bind-key 4-f window-fullscreen
+# mod + M = maximize current window
+bind-key 4-m window-maximize
+# mod + V = tile windows vertically, current window to the left
+bind-key 4-v window-vtile
+# mod + S = tile windows horizontally, current window to the top
+bind-key 4-s window-htile
+
+# mod + p = exec dialog
+bind-key 4-p menu-exec
+
+# Screenshot + Screencast
+bind-key Print "scrot"
+
+# MOUSBINDINGS
+# 1 = left mouse button
+# 2 = middle mouse button
+# 3 = right mouse button
+# unbind default mouse actions
+unbind-mouse M-1
+unbind-mouse CM-1
+unbind-mouse M-2
+unbind-mouse M-3
+unbind-mouse CMS-3
+
+# mod + left click drag = move window
+bind-mouse 4-1 window-move
+# mod + right click drag = resize window
+bind-mouse 4-3 window-resize
+# mod + middle click = lower window's focus
+bind-mouse 4-2 window-lower
