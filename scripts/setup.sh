@@ -2,6 +2,7 @@
 
 # Fast setup script for my basic utensils
 # wget https://raw.githubusercontent.com/HerrFreude/HerrFreude/main/scripts/setup.sh
+# chmod u+x setup.sh && ./setup.sh
 
 # Making the system ready for install 
 cd ~
