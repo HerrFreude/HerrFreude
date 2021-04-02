@@ -3,7 +3,7 @@
 # default font
 fontname "DejaVuSansMono-Bold:size=12"
 # border width
-borderwidth 4
+borderwidth 0
 # automatically add new windows to the current group
 sticky yes
 # snap windows to edges at 4 pixels distance
@@ -12,11 +12,11 @@ snapdist 4
 gap 10 10 10 10
 
 # colors
-color activeborder   '#82a36e'
+color activeborder   '#c0c5ce'
 color inactiveborder '#595959'
 color font           '#c0c5ce'
-color menubg         '#25301d'
-color menufg         '#c5cec0'
+color menubg         '#232323'
+color menufg         '#c0c5ce'
 color groupborder    '#a66363'
 color ungroupborder  '#a6a663'
 color urgencyborder  '#ef8888'
