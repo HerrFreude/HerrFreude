@@ -1,13 +1,17 @@
 # ~/.cwmrc
 
 # default font
-fontname "DejaVuSansMono-Bold:size=12"
+fontname "DejaVuSansMono-Bold:size=14"
+
 # border width
 borderwidth 0
+
 # automatically add new windows to the current group
 sticky yes
+
 # snap windows to edges at 4 pixels distance
 snapdist 4
+
 # leave a gap
 gap 10 10 10 10
 
@@ -20,6 +24,15 @@ color menufg         '#c0c5ce'
 color groupborder    '#a66363'
 color ungroupborder  '#a6a663'
 color urgencyborder  '#ef8888'
+
+# Programms in the command menu
+command www		firefox
+command htop	"xterm -e htop"
+command file	"xterm -e nnn"
+command news	"xterm -e newsboat"
+command musi	"xterm -e cmus"
+command snd		"xterm -e alsa-mixer" 
+command nght	"redhsift -O 3000" 
 
 # KEYBINDINGS
 # 4 = mod (windows key)
@@ -43,18 +56,22 @@ bind-key 4-j window-cycle
 # mod + k = same thing in reverse
 bind-key 4-k window-cycle
 
-# mod + q = quit window
-bind-key 4-q window-close
+# mod + Shift + c = quit window
 bind-key 4S-c window-close
 
 # mod + F = make current window fullscreen
 bind-key 4-f window-fullscreen
 # mod + M = maximize current window
 bind-key 4-m window-maximize
+
 # mod + V = tile windows vertically, current window to the left
 bind-key 4-v window-vtile
 # mod + S = tile windows horizontally, current window to the top
 bind-key 4-s window-htile
+
+# mod + shift + Q = Quit cwm
+bind-key 4S-q quit
+
 
 # mod + p = exec dialog
 bind-key 4-p menu-exec
