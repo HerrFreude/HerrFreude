@@ -42,14 +42,12 @@ XTerm.vt100.locale: true
  *color14:    #71bebe
  *color15:    #ffffff
 ! Xclock Styling
-XClock*foreground: #ffffff
+XClock*foreground: #c0c5ce
 XClock*background: #232323
 XClock*update: 60
 XClock*geometry:          320x320+1020+12
-XClock.Clock.majorColor:  #c6c5c7
-XClock.Clock.minorColor:  #c6c5c7
-XClock.Clock.hourColor:   #c6c5c7
-XClock.Clock.minuteColor: #c6c5c7
-XClock.Clock.secondColor: #c6c5c7
-
-
+XClock.Clock.majorColor:  #c0c5ce
+XClock.Clock.minorColor:  #c0c5ce
+XClock.Clock.hourColor:   #c0c5ce
+XClock.Clock.minuteColor: #c0c5ce
+XClock.Clock.secondColor: #c0c5ce
